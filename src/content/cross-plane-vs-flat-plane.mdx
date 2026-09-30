@@ -1,0 +1,71 @@
+import SectionHeading from '../components/SectionHeading.jsx'
+import Callout from '../components/Callout.jsx'
+import Badge from '../components/Badge.jsx'
+import BankAlternationPair from '../components/BankAlternationPair.jsx'
+
+<section className="content-section intro-section">
+  <SectionHeading eyebrow="INTRODUCTION" title="The crankshaft in 60 seconds" />
+  <div className="prose-grid">
+    <p>A four-stroke V8 completes one full 720° combustion cycle across its eight cylinders. That means eight firing events, spaced at 90° of crank rotation in both cross-plane and flat-plane layouts.</p>
+    <p>The crankshaft geometry does not change that global 90° interval. It changes which cylinder bank produces each event and how the crank's rotating and reciprocating masses are arranged.</p>
+  </div>
+  <Callout>
+    <strong>Key correction:</strong> do not describe cross-plane V8s as globally “uneven firing.” The firing interval is even. The unevenness discussed here is the <strong>alternation between banks</strong>.
+  </Callout>
+</section>
+
+<section className="content-section">
+  <SectionHeading eyebrow="01 / CROSS-PLANE" title="Cross-plane" />
+  <div className="two-column">
+    <div>
+      <p>Cross-plane crankshafts place crank pins at 90° intervals, creating two perpendicular crank-pin planes. A common Chevrolet small-block example uses firing order <span className="mono">1-8-4-3-6-5-7-2</span>.</p>
+      <p className="muted">Cylinder numbering convention: Chevrolet small-block — left bank 1-3-5-7; right bank 2-4-6-8.</p>
+      <p>Mapping that firing order to those banks gives <span className="mono">L-R-R-L-R-L-L-R</span>. Some consecutive events therefore arrive from the same bank.</p>
+    </div>
+    <div className="stat-stack">
+      <Badge tone="accent">90° pins</Badge>
+      <div><span className="mono">1–8–4–3–6–5–7–2</span><small>Chevrolet SBC firing order</small></div>
+      <div><span className="mono">L–R–R–L–R–L–L–R</span><small>computed bank sequence</small></div>
+    </div>
+  </div>
+</section>
+
+<section className="content-section">
+  <SectionHeading eyebrow="02 / FLAT-PLANE" title="Flat-plane" />
+  <div className="two-column">
+    <div>
+      <p>A flat-plane crankshaft places its crank pins 180° apart in a single plane. With an appropriate V8 firing sequence, the exhaust events alternate banks, producing evenly spaced pulses in each bank's exhaust stream.</p>
+      <p><Badge tone="warning">SOURCE NEEDED</Badge> Ferrari F136 firing order and cylinder-numbering convention must be sourced before this diagram can use real F136 cylinder numbers.</p>
+      <p className="muted">The dataset below is deliberately a placeholder alternating sequence, not a claimed F136 firing order.</p>
+    </div>
+    <div className="stat-stack">
+      <Badge tone="accent">180° pins</Badge>
+      <div><span className="mono">L–R–L–R–L–R–L–R</span><small>alternating-bank placeholder</small></div>
+    </div>
+  </div>
+</section>
+
+<BankAlternationPair />
+
+<section className="content-section">
+  <SectionHeading eyebrow="SOUND" title="Why the sound differs" />
+  <p>The crank layout is a major factor because it changes the sequence in which each bank's exhaust pulses arrive. A flat-plane V8 can present evenly spaced pulses to each bank, while a cross-plane arrangement can group pulses on a bank before a longer gap.</p>
+  <p>That is only part of the sound. Exhaust design also matters: manifold length and geometry, collector arrangement, and systems such as 4-1 or 4-2-1 layouts reshape the pressure waves before they reach the tailpipe.</p>
+</section>
+
+<section className="content-section">
+  <SectionHeading eyebrow="APPLICATION" title="Real-world use" />
+  <div className="prose-grid">
+    <p>Cross-plane crankshafts are common where smooth primary balance, broad road use and manageable NVH are important. The additional crank mass and exhaust-pulse grouping are accepted as part of the architecture.</p>
+    <p>Flat-plane crankshafts are associated with high-performance V8 applications where lower rotating inertia and evenly alternating bank pulses can support the desired engine response and exhaust behavior. Second-order vibration is a design consideration handled through the engine structure and mounts.</p>
+  </div>
+</section>
+
+<section className="content-section">
+  <SectionHeading eyebrow="MYTHS" title="Common myths" />
+  <div className="myth-grid">
+    <Callout><strong>Myth:</strong> “Cross-plane V8s fire unevenly.”<br /><span>All eight events still occur every 90°; bank alternation is what becomes irregular.</span></Callout>
+    <Callout><strong>Myth:</strong> “The crankshaft alone creates the sound.”<br /><span>Crank layout matters, but exhaust manifold geometry and pulse routing also shape the final sound.</span></Callout>
+    <Callout><strong>Open marker:</strong> <span>[VERIFY] Any model-specific claim should be checked against an engine-specific technical source.</span></Callout>
+  </div>
+</section>

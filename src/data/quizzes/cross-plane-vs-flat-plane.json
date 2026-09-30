@@ -1,0 +1,35 @@
+[
+  {
+    "question": "Why can a flat-plane V8 generally use a lighter crankshaft?",
+    "options": [
+      "Its crank pins are arranged in one plane, reducing counterweight requirements",
+      "It fires only once every 180 degrees",
+      "It eliminates all engine vibration",
+      "It uses two crankshafts"
+    ],
+    "answer": 0,
+    "explanation": "The simpler 180° crank arrangement can require less counterweight mass, helping reduce rotating inertia. Engine design still determines the final crankshaft mass."
+  },
+  {
+    "question": "Why do flat-plane V8s rev higher?",
+    "options": [
+      "They fire evenly",
+      "They have a lighter crankshaft and lower rotational inertia",
+      "They always use shorter connecting rods",
+      "They have no exhaust pulses"
+    ],
+    "answer": 1,
+    "explanation": "A lighter rotating assembly can reduce rotational inertia. That can support faster acceleration of engine speed; the actual limit also depends on the complete engine design."
+  },
+  {
+    "question": "What is the key exhaust-pulse difference between these layouts?",
+    "options": [
+      "A flat-plane V8 has no exhaust pulses",
+      "Both have globally uneven firing intervals",
+      "Flat-plane firing alternates banks, while cross-plane firing does not",
+      "Cross-plane V8s fire only from one bank"
+    ],
+    "answer": 2,
+    "explanation": "Every four-stroke V8 still has one firing event every 90° of crank rotation. The important difference here is how those events alternate between the two cylinder banks."
+  }
+]
